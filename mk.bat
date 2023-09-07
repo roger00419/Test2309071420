@@ -1,3 +1,4 @@
 pushd %~dp0
-powershell -noprofile -command "& { ls -Recurse | %% { echo $_.fullname } }"
+:: powershell -noprofile -command "& { ls -Recurse | %% { echo $_.fullname } }"
+dir /a /b /s
 popd
